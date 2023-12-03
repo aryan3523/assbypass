@@ -26,8 +26,8 @@ class Config:
         LOGGER.critical('ENV Missing. Exiting Now...')
         exit(1)
     AUTO_BYPASS     = getenv('AUTO_BYPASS', 'False').lower() == 'true'
-    AUTH_CHATS      = getenv('AUTH_CHATS', '5227327021').split()
-    OWNER_ID        = int(getenv('OWNER_ID', 0))
+    AUTH_CHATS      = getenv('AUTH_CHATS', '-1001964343017').split()
+    OWNER_ID        = int(getenv('OWNER_ID', 5227327021))
     DIRECT_INDEX    = getenv('DIRECT_INDEX', 'https://eliteflix.ashish-sharma-legend.workers.dev/0:').rstrip('/')
     LARAVEL_SESSION = getenv('LARAVEL_SESSION', '')
     XSRF_TOKEN      = getenv('XSRF_TOKEN', '')
